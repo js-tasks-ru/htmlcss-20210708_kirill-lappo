@@ -1,50 +1,50 @@
 /* Todo [2020/07/15 KL] Use color variables instead of plain values */
 
 .button {
+    color: #FFF;
     width: 189px;
     height: 48px;
     font-size: 16px;
-    color: #FFF;
+    font-weight: 500;
+    line-height: 19px;
     text-align: center;
     border: none;
     border-radius: 8px;
+    padding: 15px;
     transition: opacity 200ms ease-in-out, background 200ms ease-in-out, border 200ms ease-in-out;
 }
 
 .button:disabled {
     opacity: 0.5;
+    pointer-events: none;
 }
 
 .button:hover {
     cursor: pointer;
 }
 
-.button:hover:disabled {
-    cursor: default;
-}
-
-.button_type_primary {
+.button_primary {
     background: #4263EB;
 }
 
-.button_type_primary:hover:not(:disabled) {
+.button_primary:hover:not(:disabled) {
     background: #2342C0;
 }
 
-.button_type_secondary {
+.button_secondary {
     background: #7048E8;
 }
 
-.button_type_secondary:hover:not(:disabled) {
+.button_secondary:hover:not(:disabled) {
     background: #5028C6;
 }
 
-.button_type_alternate {
+.button_alternate {
     background: #FFF;
     color: #495057;
     border: 1px solid #ACB5BD;
 }
 
-.button_type_alternate:hover:not(:disabled) {
+.button_alternate:hover:not(:disabled) {
     border-color: #212429;
 }
