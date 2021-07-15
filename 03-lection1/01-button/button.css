@@ -46,5 +46,5 @@
 }
 
 .button_type_alternate:hover:not(:disabled) {
-    border: 1px solid #212429;
+    border-color: #212429;
 }
