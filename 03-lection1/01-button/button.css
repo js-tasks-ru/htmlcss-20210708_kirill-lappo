@@ -1,7 +1,5 @@
-/* Todo [2020/07/15 KL] Use color variables instead of plain values */
-
 .button {
-    color: #FFF;
+    color: var(--font-color--primary);
     width: 189px;
     height: 48px;
     font-size: 16px;
@@ -24,27 +22,28 @@
 }
 
 .button_primary {
-    background: #4263EB;
+    background: var(--primary);
 }
 
 .button_primary:hover:not(:disabled) {
-    background: #2342C0;
+    background: var(--primary-darker);
 }
 
 .button_secondary {
-    background: #7048E8;
+    background: var(--secondary);
 }
 
 .button_secondary:hover:not(:disabled) {
-    background: #5028C6;
+    background: var(--secondary-darker);
 }
 
 .button_alternate {
-    background: #FFF;
-    color: #495057;
-    border: 1px solid #ACB5BD;
+    background: var(--alternate);
+    color: var(--font-color--alternate);
+    border: 1px solid var(--border);
 }
 
 .button_alternate:hover:not(:disabled) {
-    border-color: #212429;
+    background: var(--alternate-darker);
+    border-color: var(--border-darker);
 }
