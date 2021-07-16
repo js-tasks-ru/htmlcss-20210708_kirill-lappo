@@ -1,4 +1,96 @@
 <!DOCTYPE html>
 <html lang="ru">
-    <!-- Ваше решение -->
+    <head>
+        <title>Semantic Markup</title>
+        <style>
+            body {
+                font-family: 'Cascadia Code', sans-serif;
+                color: white;
+                padding: 0;
+                margin: 0;
+            }
+
+            header {
+                background-color: #0b527a;
+                text-align: center;
+            }
+
+            header h1 {
+                font-size: 30px;
+                margin: 0;
+                padding: 10px 20px;
+            }
+
+            nav {
+                padding: 10px 0;
+                background-color: orange;
+            }
+
+            nav a {
+                color: black;
+                text-decoration: underline;
+                margin: 0 5px;
+            }
+
+            main {
+                background-color: #0b7a30;
+                margin: 0;
+                padding: 15px;
+            }
+
+            article {
+                background-color: #0b6d7a;
+                padding: 10px;
+                margin-bottom: 10px;
+            }
+
+            article h2 {
+                font-weight: lighter;
+                margin: 0;
+            }
+
+            article ul, article ol {
+                margin-left: 30px;
+                padding: 5px;
+            }
+
+            footer {
+                text-align: center;
+                font-size: 20px;
+                background-color: rgb(0, 44, 85);
+                padding: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Header</h1>
+            <nav>
+                <a>Navigation 1</a>
+                <a>Navigation 2</a>
+                <a>Navigation 3</a>
+            </nav>
+        </header>
+        <main>
+            <article>
+                <h2>Article 1</h2>
+                <ul>
+                    <li>Оригинальная трилогия</li>
+                    <li>Трилогия приквелов</li>
+                    <li>Трилогия сиквелов</li>
+                </ul>
+            </article>
+            <article>
+                <h2>Article 2</h2>
+                <ol>
+                    <li>Эпизод IV — Новая надежда</li>
+                    <li>Эпизод V — Империя наносит ответный удар</li>
+                    <li>Эпизод VI — Возвращение джедая</li>
+                </ol>
+            </article>
+        </main>
+        <footer>
+            Footer
+        </footer>
+    </body>
 </html>
