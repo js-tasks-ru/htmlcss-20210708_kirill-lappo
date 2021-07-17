@@ -42,7 +42,7 @@
 
     --background:var(--white);
 
-    --details: #495057;
+    --details: var(--grey-4);
 }
 
 * {
