@@ -40,7 +40,9 @@
     --alternate: var(--white);
     --alternate-darker: var(--white);
 
+    --background:var(--white);
 
+    --details: #495057;
 }
 
 * {
