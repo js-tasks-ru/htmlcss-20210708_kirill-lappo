@@ -1,0 +1,112 @@
+.histrogram {
+    padding-top: 16px;
+}
+
+.histogram_diagram {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.histogram_area {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    height: 50px;
+}
+
+.histogram_column {
+    height: 100%;
+    max-width: 10px;
+    min-width: 1px;
+    flex-grow: 1;
+    margin-right: 1px;
+    background-color: var(--primary);
+}
+
+.histogram_column_100 {
+    height: 100%;
+}
+
+.histogram_column_95 {
+    height: 95%;
+}
+
+.histogram_column_90 {
+    height: 90%;
+}
+
+.histogram_column_85 {
+    height: 85%;
+}
+
+.histogram_column_80 {
+    height: 80%;
+}
+
+.histogram_column_75 {
+    height: 75%;
+}
+
+.histogram_column_70 {
+    height: 70%;
+}
+
+.histogram_column_65 {
+    height: 65%;
+}
+
+.histogram_column_60 {
+    height: 60%;
+}
+
+.histogram_column_55 {
+    height: 55%;
+}
+
+.histogram_column_50 {
+    height: 50%;
+}
+
+.histogram_column_45 {
+    height: 45%;
+}
+
+.histogram_column_40 {
+    height: 40%;
+}
+
+.histogram_column_35 {
+    height: 35%;
+}
+
+.histogram_column_30 {
+    height: 30%;
+}
+
+.histogram_column_25 {
+    height: 25%;
+}
+
+.histogram_column_20 {
+    height: 20%;
+}
+
+.histogram_column_15 {
+    height: 15%;
+}
+
+.histogram_column_10 {
+    height: 10%;
+}
+
+.histogram_column_5 {
+    height: 5%;
+}
+
+.histogram_column_0 {
+    height: 0%;
+}

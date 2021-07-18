@@ -4,8 +4,75 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./histogram.css">
-    </head>
-    <body>
+        <link rel="stylesheet" href="../../components/card/card.css">
 
+    </head>
+    <style>
+
+    </style>
+    <body>
+        <label id="columnsAmountLabel" for="columnsAmount">Columns Amount</label>
+        <input
+            type="range"
+            id="columnsAmount"
+            name="columnsAmount"
+            value="50"
+            min="1"
+            max="1000"
+            step="1"
+            style="width: 100%;"
+        >
+        <hr/>
+        <div class="card histrogram" style="width: 600px;">
+            <div class="histrogram_details"></div>
+            <div id="histogram_area" class="histogram_area">
+            </div>
+        </div>
     </body>
 </html>
+
+<script>
+
+    const columnsAmountInput = document.getElementById("columnsAmount");
+    const columnsAmountLabel = document.getElementById("columnsAmountLabel");
+
+    function getRandomArbitrary(min, max, step) {
+        min = Math.ceil(min);
+        max = Math.floor(max);
+
+        value = Math.floor(Math.random() * (max - min + 1)) + min;
+
+        return Math.min(max, value + value % step)
+    }
+
+    const generateColumns = function(){
+        const area = document.getElementById("histogram_area");
+        const existingAmount = area.childElementCount;
+        const requiredAmount = +(columnsAmountInput.value);
+        let diffCount = Math.abs(existingAmount - requiredAmount);
+
+        if (existingAmount > requiredAmount) {
+            while (area.firstChild && diffCount-- > 0) {
+                area.removeChild(area.lastChild);
+            }
+        }
+
+        if (existingAmount < requiredAmount){
+            while (diffCount-- > 0) {
+                const rowElement = document.createElement('div')
+                rowElement.classList.add('histogram_column');
+
+                var height = getRandomArbitrary(0, 100, 5)
+                rowElement.classList.add('histogram_column_' + height);
+
+                area.appendChild(rowElement)
+            }
+        }
+
+        columnsAmountLabel.innerText = "Column Amount: " + requiredAmount;
+    }
+
+    columnsAmountInput.onchange = generateColumns;
+
+    generateColumns();
+</script>
