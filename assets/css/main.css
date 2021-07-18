@@ -21,7 +21,8 @@
     --border: var(--grey-3);
     --border-darker: var(--black);
 
-    --font-color: var(--black);
+    --foreground: var(--black);
+    --background: var(--white);
 
     --error: var(--red);
     --success: var(--blue);
@@ -41,9 +42,10 @@
     --alternate-darker: var(--white);
     --alternate-foreground: var(--grey-4);
 
-    --background:var(--white);
-
     --accordion-details-foreground: var(--grey-4);
+
+    --skeleton-avatar-background: var(--grey-2);
+    --skeleton-line-background: linear-gradient(92.51deg, #DDE2E5 6.44%, #E2E6E8 38.47%, #F3F5F5 56.48%, #E3E7EA 77.5%, #DDE2E5 102.52%);
 }
 
 * {
