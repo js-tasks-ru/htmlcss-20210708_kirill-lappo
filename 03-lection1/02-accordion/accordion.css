@@ -1,1 +1,32 @@
-/* Стилизация аккордеона */
+.accordion {
+    color: var(--font-color);
+    font-size: 16px;
+    line-height: 24px;
+}
+
+.accordion__item {
+    background: var(--background);
+    box-sizing: border-box;
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    padding: 24px 32px;
+    margin-bottom: 8px;
+}
+
+.accordion__item:last-child {
+    margin-bottom: 0;
+}
+
+.accordion__summary {
+    display: block;
+    cursor: pointer;
+}
+
+/* Todo [2021/07/15 KL] Need to customize later, нестандартный псевдоэлемент Google Chrome */
+.accordion__summary::-webkit-details-marker {
+    display: none;
+}
+
+.accordion__details {
+    color: var(--accordion-details-foreground);
+}

@@ -1,18 +1,43 @@
 <!DOCTYPE html>
 <!-- Страница с аккордеоном -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./accordion.css">
-    </head>
-    <body>
-        <details>
-            <summary>
-                Accordion item
+
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="./accordion.css">
+</head>
+
+<body>
+    <div class="accordion">
+        <details class="accordion__item">
+            <summary class="accordion__summary">
+                Accordion item #1
             </summary>
-            <p>
-                Hidden content
+            <p class="accordion__details">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi diam erat, venenatis sed posuere
+                scelerisque, pharetra eget quam. Phasellus vel interdum dui. Donec vel urna non ligula iaculis porta.
+                Sed eu turpis vitae nisl mattis pellentesque sit amet nec lectus. In non cursus nisi. Suspendisse vel
+                scelerisque purus. Maecenas lobortis porta massa, ut pulvinar nunc blandit sit amet. Sed imperdiet nulla
+                eget metus feugiat, sit amet porttitor lacus eleifend. Nulla massa ipsum, placerat sit amet diam vitae,
+                tempus rutrum urna. In sed nisl turpis. Donec vel est quis libero egestas interdum. Etiam id odio
+                tellus. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nullam nec justo eget ligula
+                dapibus blandit vel fringilla velit. Vestibulum rhoncus lacinia nisi, id ornare sem consequat in.
+                Phasellus ac mauris laoreet, iaculis libero sed, dapibus dolor.
             </p>
         </details>
-    </body>
+        <details class="accordion__item">
+            <summary class="accordion__summary">
+                Accordion item #2
+            </summary>
+            <p class="accordion__details">
+                Mauris ultricies lacus et ante pharetra auctor vitae in justo. Maecenas venenatis molestie cursus. Fusce
+                diam massa, dictum quis odio a, sodales blandit ipsum. Nunc luctus lacus eu leo pulvinar sollicitudin.
+                Vestibulum fringilla tristique lorem, suscipit dictum nisi porttitor ac. Donec vitae accumsan urna.
+                Morbi at fermentum ipsum, id consequat purus. In ultrices tortor nec pellentesque efficitur. Maecenas
+                lobortis malesuada dolor, ut ultrices felis sodales ut.
+            </p>
+        </details>
+    </div>
+</body>
+
 </html>

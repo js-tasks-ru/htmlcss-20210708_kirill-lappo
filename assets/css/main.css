@@ -41,7 +41,9 @@
     --alternate-darker: var(--white);
     --alternate-foreground: var(--grey-4);
 
+    --background:var(--white);
 
+    --accordion-details-foreground: var(--grey-4);
 }
 
 * {
