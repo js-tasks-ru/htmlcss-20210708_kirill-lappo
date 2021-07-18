@@ -28,5 +28,5 @@
 }
 
 .accordion__details {
-    color: var(--details);
+    color: var(--accordion-details-foreground);
 }

@@ -43,7 +43,7 @@
 
     --background:var(--white);
 
-    --details: var(--grey-4);
+    --accordion-details-foreground: var(--grey-4);
 }
 
 * {
