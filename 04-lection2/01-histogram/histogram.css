@@ -2,23 +2,40 @@
     padding-top: 16px;
 }
 
-.histogram_diagram {
+.histrogram__details {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
-    align-items: flex-end;
+    align-items: flex-start;
+    margin-bottom: 40px;
 }
 
-.histogram_area {
+.histrogram__title {
+    font-size: 16px;
+    font-weight: normal;
+    line-height: 24px;
+    margin: 0;
+    opacity: 0.8;
+}
+
+.histrogram__total-value {
+    font-size: 20px;
+    font-weight: normal;
+    line-height: 26px;
+    margin: 0;
+}
+
+.histogram__area {
     display: flex;
     flex-flow: row nowrap;
     justify-content: space-between;
     align-items: flex-end;
+    overflow: hidden;
     width: 100%;
     height: 50px;
 }
 
-.histogram_column {
+.histrogram__column {
     height: 100%;
     max-width: 10px;
     min-width: 1px;
@@ -27,86 +44,86 @@
     background-color: var(--primary);
 }
 
-.histogram_column_100 {
+.histrogram__column_100 {
     height: 100%;
 }
 
-.histogram_column_95 {
+.histrogram__column_95 {
     height: 95%;
 }
 
-.histogram_column_90 {
+.histrogram__column_90 {
     height: 90%;
 }
 
-.histogram_column_85 {
+.histrogram__column_85 {
     height: 85%;
 }
 
-.histogram_column_80 {
+.histrogram__column_80 {
     height: 80%;
 }
 
-.histogram_column_75 {
+.histrogram__column_75 {
     height: 75%;
 }
 
-.histogram_column_70 {
+.histrogram__column_70 {
     height: 70%;
 }
 
-.histogram_column_65 {
+.histrogram__column_65 {
     height: 65%;
 }
 
-.histogram_column_60 {
+.histrogram__column_60 {
     height: 60%;
 }
 
-.histogram_column_55 {
+.histrogram__column_55 {
     height: 55%;
 }
 
-.histogram_column_50 {
+.histrogram__column_50 {
     height: 50%;
 }
 
-.histogram_column_45 {
+.histrogram__column_45 {
     height: 45%;
 }
 
-.histogram_column_40 {
+.histrogram__column_40 {
     height: 40%;
 }
 
-.histogram_column_35 {
+.histrogram__column_35 {
     height: 35%;
 }
 
-.histogram_column_30 {
+.histrogram__column_30 {
     height: 30%;
 }
 
-.histogram_column_25 {
+.histrogram__column_25 {
     height: 25%;
 }
 
-.histogram_column_20 {
+.histrogram__column_20 {
     height: 20%;
 }
 
-.histogram_column_15 {
+.histrogram__column_15 {
     height: 15%;
 }
 
-.histogram_column_10 {
+.histrogram__column_10 {
     height: 10%;
 }
 
-.histogram_column_5 {
+.histrogram__column_5 {
     height: 5%;
 }
 
-.histogram_column_0 {
+.histrogram__column_0 {
     height: 0%;
 }
