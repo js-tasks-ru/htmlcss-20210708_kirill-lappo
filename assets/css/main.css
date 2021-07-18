@@ -22,8 +22,6 @@
     --border-darker: var(--black);
 
     --font-color: var(--black);
-    --font-color--primary: var(--white);
-    --font-color--alternate: var(--grey-4);
 
     --error: var(--red);
     --success: var(--blue);
@@ -33,12 +31,15 @@
 
     --primary: var(--blue);
     --primary-darker: var(--blue-darker);
+    --primary-foreground: var(--white);
 
     --secondary: var(--purple);
     --secondary-darker: var(--purple-darker);
+    --secondary-foreground: var(--white);
 
     --alternate: var(--white);
     --alternate-darker: var(--white);
+    --alternate-foreground: var(--grey-4);
 
     --background:var(--white);
 
