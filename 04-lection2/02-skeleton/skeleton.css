@@ -39,14 +39,14 @@
     background: var(--skeleton-line-background);
 }
 
-.skeleton__line-shorter {
+.skeleton__line_shorter {
     width: 80%;
 }
 
-.skeleton__line-description {
+.skeleton__line_description {
     width: 60%;
 }
 
-.skeleton__line-description-shorter {
+.skeleton__line_description_shorter {
     width: 40%;
 }
