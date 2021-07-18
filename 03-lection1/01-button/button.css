@@ -1,5 +1,4 @@
 .button {
-    color: var(--font-color--primary);
     width: 189px;
     height: 48px;
     font-size: 16px;
@@ -23,6 +22,7 @@
 
 .button_primary {
     background: var(--primary);
+    color: var(--primary-foreground);
 }
 
 .button_primary:hover:not(:disabled) {
@@ -31,6 +31,7 @@
 
 .button_secondary {
     background: var(--secondary);
+    color: var(--secondary-foreground);
 }
 
 .button_secondary:hover:not(:disabled) {
@@ -39,7 +40,7 @@
 
 .button_alternate {
     background: var(--alternate);
-    color: var(--font-color--alternate);
+    color: var(--alternate-foreground);
     border: 1px solid var(--border);
 }
 
