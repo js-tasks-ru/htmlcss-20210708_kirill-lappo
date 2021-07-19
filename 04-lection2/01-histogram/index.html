@@ -55,7 +55,7 @@
             stepCorrection = step - stepCorrection
         }
 
-        return Math.max(min, value + stepCorrection);
+        return Math.min(max, value + stepCorrection);
     }
 
     const generateColumns = function () {
