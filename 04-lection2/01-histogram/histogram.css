@@ -28,7 +28,6 @@
 .histogram__area {
     display: flex;
     flex-flow: row nowrap;
-    justify-content: space-between;
     align-items: flex-end;
     overflow: hidden;
     width: 100%;
