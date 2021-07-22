@@ -1,19 +1,27 @@
 .tooltip {
     position: relative;
+    text-align: center;
+}
+
+.tooltip__icon {
+    background: center no-repeat url(../../assets/images/help.svg);
+    background-size: 100% 100%;
+    width: 24px;
+    height: 24px;
 }
 
 .tooltip__activator {
-    display: block;
-
-    border: 1px dotted red;;
+    display: flex;
+    justify-content: center;
 }
 
 .tooltip__info {
     display: none;
     position: absolute;
-    top: -100%;
+    top: -50%;
     left: 50%;
     transform: translate(-50%, -100%);
+    width: fit-content;
 
     background-color: var(--primary);
     color: var(--primary-foreground);
