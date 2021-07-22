@@ -3,6 +3,7 @@
 <html lang="ru">
 
 <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./components/card/card.css">
     <link rel="stylesheet" href="./components/component-preview/component-preview.css">
@@ -10,6 +11,11 @@
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
     <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
     <link rel="stylesheet" href="./assets/css/main-page.css">
+    <style>
+        .tooltip__info{
+            display: block;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,7 +36,7 @@
                                     <div class="tooltip__activator">
                                         <div class="tooltip__icon"></div>
                                     </div>
-                                    <div class="tooltip__info">
+                                    <div class="tooltip__info" style="display: block;">
                                         Helper Text Goes Here
                                     </div>
                                 </div>
@@ -42,72 +48,70 @@
                     </div>
                 </div>
 
-                <div class="component-container">
-                    <div class="component-container__item">
-                        <div class="card card_pane">
-                            <div class="component-preview">
-                                <div class="component-preview__preview">
-                                    <div class="card">
-                                        <div class="histrogram">
-                                            <div class="histrogram__details">
-                                                <div class="histrogram__header">
-                                                    <p class="histrogram__title">
-                                                        Total orders
-                                                    </p>
-                                                    <p class="histrogram__total-value">
-                                                        50254
-                                                    </p>
-                                                </div>
-                                                <a href="#" class="link histrogram__link">
-                                                    View All
-                                                </a>
+                <div class="component-container__item">
+                    <div class="card card_pane">
+                        <div class="component-preview">
+                            <div class="component-preview__preview">
+                                <div class="card">
+                                    <div class="histrogram">
+                                        <div class="histrogram__details">
+                                            <div class="histrogram__header">
+                                                <p class="histrogram__title">
+                                                    Total orders
+                                                </p>
+                                                <p class="histrogram__total-value">
+                                                    50254
+                                                </p>
                                             </div>
+                                            <a href="#" class="link histrogram__link">
+                                                View All
+                                            </a>
+                                        </div>
+                                        <div id="histogram__area" class="histogram__area">
                                             <div id="histogram__area" class="histogram__area">
-                                                <div id="histogram__area" class="histogram__area">
-                                                    <div class="histrogram__column histrogram__column_100"></div>
-                                                    <div class="histrogram__column histrogram__column_60"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_85"></div>
-                                                    <div class="histrogram__column histrogram__column_80"></div>
-                                                    <div class="histrogram__column histrogram__column_5"></div>
-                                                    <div class="histrogram__column histrogram__column_35"></div>
-                                                    <div class="histrogram__column histrogram__column_70"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_85"></div>
-                                                    <div class="histrogram__column histrogram__column_60"></div>
-                                                    <div class="histrogram__column histrogram__column_90"></div>
-                                                    <div class="histrogram__column histrogram__column_10"></div>
-                                                    <div class="histrogram__column histrogram__column_35"></div>
-                                                    <div class="histrogram__column histrogram__column_50"></div>
-                                                    <div class="histrogram__column histrogram__column_85"></div>
-                                                    <div class="histrogram__column histrogram__column_55"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_55"></div>
-                                                    <div class="histrogram__column histrogram__column_5"></div>
-                                                    <div class="histrogram__column histrogram__column_55"></div>
-                                                    <div class="histrogram__column histrogram__column_35"></div>
-                                                    <div class="histrogram__column histrogram__column_90"></div>
-                                                    <div class="histrogram__column histrogram__column_30"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_75"></div>
-                                                    <div class="histrogram__column histrogram__column_70"></div>
-                                                    <div class="histrogram__column histrogram__column_30"></div>
-                                                    <div class="histrogram__column histrogram__column_50"></div>
-                                                    <div class="histrogram__column histrogram__column_100"></div>
-                                                    <div class="histrogram__column histrogram__column_75"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_40"></div>
-                                                    <div class="histrogram__column histrogram__column_60"></div>
-                                                    <div class="histrogram__column histrogram__column_65"></div>
-                                                    <div class="histrogram__column histrogram__column_20"></div>
-                                                </div>
+                                                <div class="histrogram__column histrogram__column_100"></div>
+                                                <div class="histrogram__column histrogram__column_60"></div>
+                                                <div class="histrogram__column histrogram__column_45"></div>
+                                                <div class="histrogram__column histrogram__column_85"></div>
+                                                <div class="histrogram__column histrogram__column_80"></div>
+                                                <div class="histrogram__column histrogram__column_5"></div>
+                                                <div class="histrogram__column histrogram__column_35"></div>
+                                                <div class="histrogram__column histrogram__column_70"></div>
+                                                <div class="histrogram__column histrogram__column_45"></div>
+                                                <div class="histrogram__column histrogram__column_85"></div>
+                                                <div class="histrogram__column histrogram__column_60"></div>
+                                                <div class="histrogram__column histrogram__column_90"></div>
+                                                <div class="histrogram__column histrogram__column_10"></div>
+                                                <div class="histrogram__column histrogram__column_35"></div>
+                                                <div class="histrogram__column histrogram__column_50"></div>
+                                                <div class="histrogram__column histrogram__column_85"></div>
+                                                <div class="histrogram__column histrogram__column_55"></div>
+                                                <div class="histrogram__column histrogram__column_45"></div>
+                                                <div class="histrogram__column histrogram__column_55"></div>
+                                                <div class="histrogram__column histrogram__column_5"></div>
+                                                <div class="histrogram__column histrogram__column_55"></div>
+                                                <div class="histrogram__column histrogram__column_35"></div>
+                                                <div class="histrogram__column histrogram__column_90"></div>
+                                                <div class="histrogram__column histrogram__column_30"></div>
+                                                <div class="histrogram__column histrogram__column_45"></div>
+                                                <div class="histrogram__column histrogram__column_75"></div>
+                                                <div class="histrogram__column histrogram__column_70"></div>
+                                                <div class="histrogram__column histrogram__column_30"></div>
+                                                <div class="histrogram__column histrogram__column_50"></div>
+                                                <div class="histrogram__column histrogram__column_100"></div>
+                                                <div class="histrogram__column histrogram__column_75"></div>
+                                                <div class="histrogram__column histrogram__column_45"></div>
+                                                <div class="histrogram__column histrogram__column_40"></div>
+                                                <div class="histrogram__column histrogram__column_60"></div>
+                                                <div class="histrogram__column histrogram__column_65"></div>
+                                                <div class="histrogram__column histrogram__column_20"></div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="component-preview__title">
-                                    Histogram
-                                </div>
+                            </div>
+                            <div class="component-preview__title">
+                                Histogram
                             </div>
                         </div>
                     </div>
