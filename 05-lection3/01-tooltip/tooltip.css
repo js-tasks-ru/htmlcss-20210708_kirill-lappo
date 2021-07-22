@@ -1,0 +1,44 @@
+.tooltip {
+    position: relative;
+}
+
+.tooltip__activator {
+    display: block;
+
+    border: 1px dotted red;;
+}
+
+.tooltip__info {
+    display: none;
+    position: absolute;
+    top: -100%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    background-color: var(--primary);
+    color: var(--primary-foreground);
+    box-shadow: 0px 2px 4px rgba(33, 36, 41, 0.05);
+    border-radius: 10px;
+    padding: 13px 21px 8px;
+}
+
+.tooltip__info:after {
+    content: "";
+    position: absolute;
+    /*browser may not render correctly on the edge between element and :after*/
+    /* that's why 95 to overlap parent element a little bit */
+    top: 95%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border: 10px solid transparent;
+    border-top-color: var(--primary);
+}
+
+.tooltip__activator:hover {
+    cursor: pointer;
+}
+
+.tooltip__activator:hover ~ .tooltip__info {
+    display: block;
+}
