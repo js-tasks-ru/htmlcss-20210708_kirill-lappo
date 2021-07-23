@@ -1,12 +1,54 @@
 <!DOCTYPE html>
 <!-- Страница с модалкой -->
 <html lang="ru">
-    <head>
-        <link rel="stylesheet" href="../../assets/css/main.css">
-        <link rel="stylesheet" href="./modal.css">
-        <title>Modal</title>
-    </head>
-    <body>
-    </body>
-    <script src="./index.js"></script> 
+
+<head>
+    <link rel="stylesheet" href="../../assets/css/main.css">
+    <link rel="stylesheet" href="../../components/card/card.css">
+    <link rel="stylesheet" href="../../03-lection1/01-button/button.css">
+    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="./modal.css">
+    <title>Modal</title>
+    <style>
+        .content-container {
+            padding: 50px;
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="content-container">
+        <button id="modal-open" class="button button_primary">Open Modal Window</button>
+    </div>
+    <div id="modal" class="modal-window" style="display: none;">
+        <div class="modal-window__backdrop"></div>
+        <div class="modal-window__content">
+            <div class="card">
+                <div class="modal-window__content-wrapper">
+                    <h1 class="modal-window__content-title">
+                        Some important message
+                    </h1>
+                    <p class="modal-window__content-description">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum sed enim in euismod. Aenean
+                        porttitor, enim in maximus posuere, nibh turpis blandit felis, non dignissim lorem mi ut nisi.
+                        Etiam varius ut ligula at porttitor. Mauris ornare dapibus rhoncus. Vestibulum nisl sapien,
+                        fermentum nec massa ac, condimentum volutpat risus. Etiam aliquet metus elit, at lobortis turpis
+                        lacinia eu. Mauris consectetur nibh lacus, vitae sollicitudin orci porttitor sed. Maecenas
+                        sollicitudin fermentum aliquam. Nulla porttitor pellentesque ex, eget pharetra lorem posuere
+                        varius. Aenean ultricies sed nulla vel pretium. Nulla quis ultricies libero.
+                    </p>
+                    <!-- viewBox="0 0 50 50" width="50" height="50" -->
+                    <svg id="modal-close" class="modal-window__close-icon">
+                        <use xlink:href="#close">
+                    </svg>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+<script src="./index.js"></script>
+
 </html>
