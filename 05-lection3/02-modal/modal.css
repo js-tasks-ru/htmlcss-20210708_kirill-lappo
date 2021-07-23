@@ -53,5 +53,5 @@
 
 .modal-window__close-icon:hover  {
     cursor: pointer;
-    box-shadow: 0 0 10px currentColor;
+    filter: drop-shadow( 0px 0px 1px currentColor);
 }
