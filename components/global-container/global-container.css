@@ -6,3 +6,10 @@
 .global-container__area {
     padding: 0 160px;
 }
+
+@media (max-width: 768px) {
+
+    .global-container__area {
+        padding: 0 20px;
+    }
+}
