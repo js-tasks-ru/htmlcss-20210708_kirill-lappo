@@ -1,0 +1,16 @@
+.footer{
+    display: flex;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.footer__title {
+    font-size: 38px;
+    line-height: 48px;
+}
+
+.footer__details {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 0 20%;
+}

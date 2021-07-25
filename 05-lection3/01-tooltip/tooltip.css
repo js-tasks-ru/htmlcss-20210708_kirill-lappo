@@ -4,14 +4,8 @@
 }
 
 .tooltip__icon {
-    color: var(--foreground);
     width: 24px;
     height: 24px;
-}
-
-.tooltip__activator {
-    display: flex;
-    justify-content: center;
 }
 
 .tooltip__info {
@@ -44,10 +38,10 @@
     border-top-color: var(--primary);
 }
 
-.tooltip__activator:hover {
+.tooltip__icon:hover {
     cursor: pointer;
 }
 
-.tooltip__activator:hover ~ .tooltip__info {
+.tooltip__icon:hover ~ .tooltip__info {
     display: block;
 }
