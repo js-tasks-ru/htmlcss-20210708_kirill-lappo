@@ -1,9 +1,10 @@
 .tooltip {
+    display: inline-block;
+    position: relative;
     align-items: center;
 }
 
 .tooltip__icon {
-    position: relative;
     width: 24px;
     height: 24px;
 }
@@ -44,6 +45,6 @@
     cursor: pointer;
 }
 
-.tooltip__icon:hover > .tooltip__info {
+.tooltip__icon:hover ~ .tooltip__info {
     display: block;
 }
