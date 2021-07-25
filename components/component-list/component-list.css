@@ -1,17 +1,18 @@
-.component-container {
+.component-list {
     display: flex;
     flex-flow: row wrap;
     gap: 30px;
 }
 
-.component-container__item {
+.component-list__item {
     flex-basis: 25%;
     flex-grow: 1;
+    height: 350px;
 }
 
 @media (max-width: 768px) {
 
-    .component-container__item {
+    .component-list__item {
         flex-basis: 100%;
     }
 }

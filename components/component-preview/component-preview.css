@@ -6,7 +6,10 @@
 }
 
 .component-preview__preview {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
     padding: 80px 20px 35px;
     flex-grow: 1;
 }
