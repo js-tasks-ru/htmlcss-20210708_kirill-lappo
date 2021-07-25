@@ -3,7 +3,8 @@
     border: 1px solid var(--grey-3);
     box-sizing: border-box;
     border-radius: 8px;
-    height: inherit;
+    height: 100%;
+    width: 100%;
 }
 
 .card_pane {

@@ -1,0 +1,9 @@
+.main {
+    background: var(--grey-0_5);
+    border-top: 1px solid var(--border-lighter);
+    border-bottom: 1px solid var(--border-lighter);
+    padding-top: 67px;
+    padding-bottom: 67px;
+
+    flex-grow: 2;
+}

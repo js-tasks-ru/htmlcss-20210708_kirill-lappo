@@ -7,21 +7,23 @@
 
         <style>
             .card {
-                text-align: center;
-                margin: 100px auto;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
             }
         </style>
     </head>
     <body>
         <div class="card">
             <div class="tooltip">
-                <div class="tooltip__activator">
-                    <div class="tooltip__activator">
-                        <div class="tooltip__icon"></div>
+                <div class="tooltip__icon">
+                    <svg>
+                        <use xlink:href="/assets/images/help.svg#help">
+                    </svg>
+                    <div class="tooltip__info">
+                        Helper Text Goes Here
                     </div>
-                </div>
-                <div class="tooltip__info">
-                    Helper Text Goes Here
                 </div>
             </div>
         </div>
