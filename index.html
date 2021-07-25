@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
     <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
+    <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
     <link rel="stylesheet" href="./components/card/card.css">
     <link rel="stylesheet" href="./components/component-list/component-list.css">
     <link rel="stylesheet" href="./components/component-preview/component-preview.css">
@@ -153,7 +154,24 @@
                     <div class="card card_pane">
                         <div class="component-preview">
                             <div class="component-preview__preview">
-
+                                <div id="modal" class="modal-window">
+                                    <div class="modal-window__backdrop"></div>
+                                    <div class="modal-window__content">
+                                        <div class="card">
+                                            <div class="modal-window__content-wrapper">
+                                                <h1 class="modal-window__content-title">
+                                                    Some important message
+                                                </h1>
+                                                <p class="modal-window__content-description">
+                                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum sed enim in euismod.
+                                                </p>
+                                                <svg id="modal-close" class="modal-window__close-icon">
+                                                    <use xlink:href="../../assets/images/icons.svg#close">
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                             <div class="component-preview__title">
                                 Modal Dialog
