@@ -1,0 +1,56 @@
+.calendar {
+    padding: 28px;
+    color: var(--calendar-foreground);
+}
+
+.calendar__title {
+    text-align: center;
+    color: var(--calendar-foreground);
+    margin-bottom: 24px;
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+.calendar__grid-wrapper {
+    position: relative;
+    padding-bottom: 100%;
+}
+
+.calendar__grid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-auto-flow: row;
+
+    grid-template-columns: repeat(7, [col-start] 1fr [col-end]);
+    grid-template-rows:
+        [day-names-start] 1fr [day-names-end
+        day-numbers-start] repeat(6, 1fr) [day-numbers-end];
+}
+
+.calendar__grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--calendar-foreground);
+
+    border:1px dotted red;
+}
+
+.calendar__grid-item_day-name {
+    color: var(--calendar-foreground-days);
+}
+
+.calendar__grid-item_day-number {
+}
