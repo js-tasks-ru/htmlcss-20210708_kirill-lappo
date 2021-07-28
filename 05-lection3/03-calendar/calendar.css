@@ -31,6 +31,7 @@
     grid-template-columns: repeat(7, [col-start] 1fr [col-end]);
     grid-template-rows:
         [day-names-start] 1fr [day-names-end
+        empty-start] 3% [empty-end
         day-numbers-start] repeat(6, 1fr) [day-numbers-end];
 }
 
@@ -44,13 +45,22 @@
     font-size: 16px;
     line-height: 20px;
     color: var(--calendar-foreground);
-
-    border:1px dotted red;
 }
 
 .calendar__grid-item_day-name {
     color: var(--calendar-foreground-days);
 }
 
-.calendar__grid-item_day-number {
+.calendar__grid-row-separator {
+    grid-area: empty-start / 1 / empty-end / -1;
+}
+
+.calendar__grid-item_selected{
+    background-color:  var(--calendar-background-days-selected);
+}
+
+.calendar__grid-item_selected_start
+, .calendar__grid-item_selected_end {
+    background-color:  var(--primary);
+    color: var(--primary-foreground);
 }

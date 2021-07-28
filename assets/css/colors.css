@@ -17,6 +17,7 @@
 
     --purple: #7048E8;
     --purple-darker: #5028C6;
+    --blue-lighter: 160, 177, 245;/* #A0B1F5 */
     --blue: #4263EB;
     --blue-darker: #2342C0;
 
@@ -56,4 +57,6 @@
 
     --calendar-foreground: var(--dark-blue);
     --calendar-foreground-days: var(--grey-3_5);
+    --calendar-background-days-selected: rgba(var(--blue-lighter), 0.5);
+
 }
