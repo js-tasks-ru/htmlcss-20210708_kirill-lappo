@@ -1,17 +1,17 @@
 .calendar {
     padding: 28px;
-    color: var(--calendar-foreground);
 }
 
 .calendar__title {
     text-align: center;
     color: var(--calendar-foreground);
-    margin-bottom: 24px;
 
     font-style: normal;
     font-weight: 600;
     font-size: 20px;
     line-height: 24px;
+
+    margin-bottom: 1em;
 }
 
 .calendar__grid-wrapper {
