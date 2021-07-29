@@ -1,0 +1,66 @@
+.calendar {
+    cardding: 28px;
+}
+
+.calendar__title {
+    text-align: center;
+    color: var(--calendar-foreground);
+
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    margin-bottom: 1em;
+}
+
+.calendar__grid-wrapper {
+    position: relative;
+    cardding-bottom: 100%;
+}
+
+.calendar__grid {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: grid;
+    grid-auto-flow: row;
+
+    grid-template-columns: repeat(7, [col-start] 1fr [col-end]);
+    grid-template-rows:
+        [day-names-start] 1fr [day-names-end
+        empty-start] 3% [empty-end
+        day-numbers-start] repeat(6, 1fr) [day-numbers-end];
+}
+
+.calendar__grid-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 20px;
+    color: var(--calendar-foreground);
+}
+
+.calendar__grid-item_day-name {
+    color: var(--calendar-foreground-days);
+}
+
+.calendar__grid-row-separator {
+    grid-area: empty-start / 1 / empty-end / -1;
+}
+
+.calendar__grid-item_selected{
+    background-color:  var(--calendar-background-days-selected);
+}
+
+.calendar__grid-item_selected_start
+, .calendar__grid-item_selected_end {
+    background-color:  var(--primary);
+    color: var(--primary-foreground);
+}
