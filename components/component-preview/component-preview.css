@@ -1,21 +1,22 @@
 .component-preview {
     display: flex;
     flex-flow: column nowrap;
-    text-align: center;
 
+    text-align: center;
     background: var(--background);
     box-sizing: border-box;
     border-radius: var(--component-border-radius);
-    box-shadow: var(--component-box-shadow)
+    box-shadow: var(--component-box-shadow);
+
+    height: 360px;
 }
 
 .component-preview__preview {
-    margin: 80px 20px 35px;
-    height: 220px;
+    padding: 80px 20px 0;
+    flex-grow: 1;
 }
 
 .component-preview__title {
-    display: block;
     font-weight: 500;
     font-size: 21px;
     line-height: 25px;
