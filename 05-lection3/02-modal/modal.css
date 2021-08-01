@@ -19,7 +19,7 @@
     left: 0;
 }
 
-.modal-window__main {
+.modal-window__window {
     position: absolute;
     top: 50%;
     left: 0;
@@ -27,6 +27,12 @@
     transform: translateY(-50%);
     margin: 0 auto;
     max-width: 1200px;
+
+    background-color: var(--background);
+
+    border: var(--component-border);
+    box-sizing: border-box;
+    border-radius: var(--component-border-radius);
 }
 
 .modal-window__content {
