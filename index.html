@@ -8,11 +8,10 @@
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
     <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
     <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
-    <link rel="stylesheet" href="./components/pad/pad.css">
     <link rel="stylesheet" href="./components/component-list/component-list.css">
     <link rel="stylesheet" href="./components/component-preview/component-preview.css">
     <link rel="stylesheet" href="./components/footer/footer.css">
-    <link rel="stylesheet" href="./components/global-container/global-container.css">
+    <link rel="stylesheet" href="./components/page-area/page-area.css">
     <link rel="stylesheet" href="./components/header/header.css">
     <link rel="stylesheet" href="./components/link/link.css">
     <link rel="stylesheet" href="./components/main/main.css">
@@ -30,198 +29,173 @@
     </style>
 </head>
 
-<body>
-    <div class="global-container">
-        <header class="header">
-            <div class="global-container__area">
-                <h1 class="header__title">
-                    Reusable component library
-                </h1>
-            </div>
-        </header>
-        <main class="main">
-            <div class="global-container__area">
-                <div class="component-list">
-
-                    <div class="component-list__item">
-                        <div class="pad pad_pane">
-                            <div class="component-preview">
-                                <div class="component-preview__preview">
-                                    <div class="tooltip">
-                                        <div class="tooltip__icon">
-                                            <svg>
-                                                <use xlink:href="/assets/images/icons.svg#help">
-                                            </svg>
-                                            <div class="tooltip__info">
-                                                Helper Text Goes Here
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="component-preview__title">
-                                    Tooltip
+<body class="page">
+    <header class="header">
+        <div class="page__area">
+            <h1 class="header__title">
+                Reusable component library
+            </h1>
+        </div>
+    </header>
+    <main class="main">
+        <div class="page__area">
+            <div class="component-list">
+                <div class="component-preview component-list__item">
+                    <div class="component-preview__preview">
+                        <div class="tooltip">
+                            <div class="tooltip__icon">
+                                <svg>
+                                    <use xlink:href="/assets/images/icons.svg#help">
+                                </svg>
+                                <div class="tooltip__info">
+                                    Helper Text Goes Here
                                 </div>
                             </div>
                         </div>
                     </div>
-
-                    <div class="component-list__item">
-                        <div class="pad pad_pane">
-                            <div class="component-preview">
-                                <div class="component-preview__preview">
-                                    <div class="pad">
-                                        <div class="histrogram">
-                                            <div class="histrogram__details">
-                                                <div class="histrogram__header">
-                                                    <p class="histrogram__title">
-                                                        Total orders
-                                                    </p>
-                                                    <p class="histrogram__total-value">
-                                                        50254
-                                                    </p>
-                                                </div>
-                                                <a href="#" class="link histrogram__link">
-                                                    View All
-                                                </a>
-                                            </div>
-                                            <div id="histogram__area" class="histogram__area">
-                                                <div id="histogram__area" class="histogram__area">
-                                                    <div class="histrogram__column histrogram__column_100"></div>
-                                                    <div class="histrogram__column histrogram__column_60"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_85"></div>
-                                                    <div class="histrogram__column histrogram__column_80"></div>
-                                                    <div class="histrogram__column histrogram__column_5"></div>
-                                                    <div class="histrogram__column histrogram__column_35"></div>
-                                                    <div class="histrogram__column histrogram__column_70"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_85"></div>
-                                                    <div class="histrogram__column histrogram__column_60"></div>
-                                                    <div class="histrogram__column histrogram__column_90"></div>
-                                                    <div class="histrogram__column histrogram__column_10"></div>
-                                                    <div class="histrogram__column histrogram__column_35"></div>
-                                                    <div class="histrogram__column histrogram__column_50"></div>
-                                                    <div class="histrogram__column histrogram__column_85"></div>
-                                                    <div class="histrogram__column histrogram__column_55"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_55"></div>
-                                                    <div class="histrogram__column histrogram__column_5"></div>
-                                                    <div class="histrogram__column histrogram__column_55"></div>
-                                                    <div class="histrogram__column histrogram__column_35"></div>
-                                                    <div class="histrogram__column histrogram__column_90"></div>
-                                                    <div class="histrogram__column histrogram__column_30"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_75"></div>
-                                                    <div class="histrogram__column histrogram__column_70"></div>
-                                                    <div class="histrogram__column histrogram__column_30"></div>
-                                                    <div class="histrogram__column histrogram__column_50"></div>
-                                                    <div class="histrogram__column histrogram__column_100"></div>
-                                                    <div class="histrogram__column histrogram__column_75"></div>
-                                                    <div class="histrogram__column histrogram__column_45"></div>
-                                                    <div class="histrogram__column histrogram__column_40"></div>
-                                                    <div class="histrogram__column histrogram__column_60"></div>
-                                                    <div class="histrogram__column histrogram__column_65"></div>
-                                                    <div class="histrogram__column histrogram__column_20"></div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="component-preview__title">
-                                    Histogram
-                                </div>
-                            </div>
-                        </div>
+                    <div class="component-preview__title">
+                        Tooltip
                     </div>
-
-                    <div class="component-list__item">
-                        <div class="pad pad_pane">
-                            <div class="component-preview">
-                                <div class="component-preview__preview">
-
-                                </div>
-                                <div class="component-preview__title">
-                                    Custom Form Elements
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="component-list__item">
-                        <div class="pad pad_pane">
-                            <div class="component-preview">
-                                <div class="component-preview__preview">
-
-                                </div>
-                                <div class="component-preview__title">
-                                    Calendar
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="component-list__item">
-                        <div class="pad pad_pane">
-                            <div class="component-preview">
-                                <div id="modalDialogPreview" class="component-preview__preview">
-                                    <div class="modal-window">
-                                        <div class="modal-window__backdrop"></div>
-                                        <div class="modal-window__main">
-                                            <div class="pad">
-                                                <div class="modal-window__content">
-                                                    <h1 class="modal-window__content-title">
-                                                        Some important message
-                                                    </h1>
-                                                    <p class="modal-window__content-description">
-                                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum sed enim in euismod.
-                                                    </p>
-                                                </div>
-                                                <svg id="modal-close" class="modal-window__close-icon">
-                                                    <use xlink:href="../../assets/images/icons.svg#close">
-                                                </svg>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="component-preview__title">
-                                    Modal Dialog
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="component-list__item">
-                        <div class="pad pad_pane">
-                            <div class="component-preview">
-                                <div class="component-preview__preview">
-
-                                </div>
-                                <div class="component-preview__title">
-                                    Avatar
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
                 </div>
+
+                <div class="component-preview component-list__item">
+                    <div class="component-preview__preview">
+                        <div class="histrogram">
+                            <div class="histrogram__details">
+                                <div class="histrogram__header">
+                                    <p class="histrogram__title">
+                                        Total orders
+                                    </p>
+                                    <p class="histrogram__total-value">
+                                        50254
+                                    </p>
+                                </div>
+                                <a href="#" class="link histrogram__link">
+                                    View All
+                                </a>
+                            </div>
+                            <div id="histogram__area" class="histogram__area">
+                                <div id="histogram__area" class="histogram__area">
+                                    <div class="histrogram__column histrogram__column_100"></div>
+                                    <div class="histrogram__column histrogram__column_60"></div>
+                                    <div class="histrogram__column histrogram__column_45"></div>
+                                    <div class="histrogram__column histrogram__column_85"></div>
+                                    <div class="histrogram__column histrogram__column_80"></div>
+                                    <div class="histrogram__column histrogram__column_5"></div>
+                                    <div class="histrogram__column histrogram__column_35"></div>
+                                    <div class="histrogram__column histrogram__column_70"></div>
+                                    <div class="histrogram__column histrogram__column_45"></div>
+                                    <div class="histrogram__column histrogram__column_85"></div>
+                                    <div class="histrogram__column histrogram__column_60"></div>
+                                    <div class="histrogram__column histrogram__column_90"></div>
+                                    <div class="histrogram__column histrogram__column_10"></div>
+                                    <div class="histrogram__column histrogram__column_35"></div>
+                                    <div class="histrogram__column histrogram__column_50"></div>
+                                    <div class="histrogram__column histrogram__column_85"></div>
+                                    <div class="histrogram__column histrogram__column_55"></div>
+                                    <div class="histrogram__column histrogram__column_45"></div>
+                                    <div class="histrogram__column histrogram__column_55"></div>
+                                    <div class="histrogram__column histrogram__column_5"></div>
+                                    <div class="histrogram__column histrogram__column_55"></div>
+                                    <div class="histrogram__column histrogram__column_35"></div>
+                                    <div class="histrogram__column histrogram__column_90"></div>
+                                    <div class="histrogram__column histrogram__column_30"></div>
+                                    <div class="histrogram__column histrogram__column_45"></div>
+                                    <div class="histrogram__column histrogram__column_75"></div>
+                                    <div class="histrogram__column histrogram__column_70"></div>
+                                    <div class="histrogram__column histrogram__column_30"></div>
+                                    <div class="histrogram__column histrogram__column_50"></div>
+                                    <div class="histrogram__column histrogram__column_100"></div>
+                                    <div class="histrogram__column histrogram__column_75"></div>
+                                    <div class="histrogram__column histrogram__column_45"></div>
+                                    <div class="histrogram__column histrogram__column_40"></div>
+                                    <div class="histrogram__column histrogram__column_60"></div>
+                                    <div class="histrogram__column histrogram__column_65"></div>
+                                    <div class="histrogram__column histrogram__column_20"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-preview__title">
+                        Histogram
+                    </div>
+                </div>
+
+                <div class="component-preview component-list__item">
+                    <div class="component-preview__preview">
+
+                    </div>
+                    <div class="component-preview__title">
+                        Custom Form Elements
+                    </div>
+                </div>
+
+                <div class="component-preview component-list__item">
+                    <div class="component-preview__preview">
+
+                    </div>
+                    <div class="component-preview__title">
+                        Calendar
+                    </div>
+                </div>
+
+                <div class="component-preview component-list__item">
+                    <div class="component-preview__preview">
+                        <div id="modalDialogPreview" class="component-preview__preview">
+                            <div class="modal-window">
+                                <div class="modal-window__backdrop"></div>
+                                <div class="modal-window__main">
+                                    <div class="pad">
+                                        <div class="modal-window__content">
+                                            <h1 class="modal-window__content-title">
+                                                Some important message
+                                            </h1>
+                                            <p class="modal-window__content-description">
+                                                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum sed enim in euismod.
+                                            </p>
+                                        </div>
+                                        <svg id="modal-close" class="modal-window__close-icon">
+                                            <use xlink:href="../../assets/images/icons.svg#close">
+                                        </svg>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="component-preview__title">
+                        Modal Dialog
+                    </div>
+                </div>
+
+
+
+                <div class="component-preview component-list__item">
+                    <div class="component-preview__preview">
+
+                    </div>
+                    <div class="component-preview__title">
+                        Avatar
+                    </div>
+                </div>
+
             </div>
-        </main>
-        <footer class="footer">
-            <div class="global-container__area">
-                <h2 class="footer__title">
-                    About
-                </h2>
-                <p class="footer__details">
-                    This project is a collection of professionally designed, pre-built, fully responsive HTML snippets
-                    you
-                    can
-                    drop into your projects. Get started by checking out our free preview components, or browsing the
-                    PNG
-                    previews in the categories you're most curious about.
-                </p>
-            </div>
-        </footer>
-    </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="page__area">
+            <h2 class="footer__title">
+                About
+            </h2>
+            <p class="footer__details">
+                This project is a collection of professionally designed, pre-built, fully responsive HTML snippets
+                you
+                can
+                drop into your projects. Get started by checking out our free preview components, or browsing the
+                PNG
+                previews in the categories you're most curious about.
+            </p>
+        </div>
+    </footer>
 </body>
 
 </html>

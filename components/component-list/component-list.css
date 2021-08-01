@@ -7,7 +7,6 @@
 .component-list__item {
     flex-basis: 30%;
     flex-grow: 1;
-    height: 367px;
 }
 
 @media (max-width: 768px) {
