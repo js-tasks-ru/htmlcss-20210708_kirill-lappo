@@ -4,8 +4,28 @@
     <head>
         <link rel="stylesheet" href="../../assets/css/main.css">
         <link rel="stylesheet" href="./tooltip.css">
+
+        <style>
+            .card {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                height: 100vh;
+            }
+        </style>
     </head>
     <body>
-
+        <div class="card">
+            <div class="tooltip">
+                <div class="tooltip__icon">
+                    <svg>
+                        <use xlink:href="/assets/images/icons.svg#help">
+                    </svg>
+                </div>
+                <div class="tooltip__info">
+                    Helper Text Goes Here
+                </div>
+            </div>
+        </div>
     </body>
 </html>
