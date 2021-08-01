@@ -24,6 +24,8 @@
         /* To make modal modal be placed inside of preview container */
         #modalDialogPreview {
             position: relative;
+            width: 100%;
+            height: 100%;
         }
 
     </style>
@@ -141,7 +143,7 @@
 
                 <div class="component-preview component-list__item">
                     <div class="component-preview__preview">
-                        <div id="modalDialogPreview" class="component-preview__preview">
+                        <div id="modalDialogPreview">
                             <div class="modal-window">
                                 <div class="modal-window__backdrop"></div>
                                 <div class="modal-window__window">
@@ -150,7 +152,7 @@
                                             Some important message
                                         </h1>
                                         <p class="modal-window__content-description">
-                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc dictum sed enim in euismod.
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                                         </p>
                                     </div>
                                     <svg id="modal-close" class="modal-window__close-icon">
