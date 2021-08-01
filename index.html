@@ -7,8 +7,11 @@
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
     <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
     <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
     <link rel="stylesheet" href="./assets/css/main.css">
+=======
+>>>>>>> task/modal-window
     <link rel="stylesheet" href="./components/component-list/component-list.css">
     <link rel="stylesheet" href="./components/component-preview/component-preview.css">
     <link rel="stylesheet" href="./components/footer/footer.css">
@@ -26,6 +29,12 @@
         /* To make modal modal be placed inside of preview container */
         #modalDialogPreview {
             position: relative;
+            width: 100%;
+            height: 100%;
+        }
+
+        #tooltipPreview {
+            top: 50%;
         }
 
     </style>
@@ -44,7 +53,7 @@
             <div class="component-list">
                 <div class="component-preview component-list__item">
                     <div class="component-preview__preview">
-                        <div class="tooltip">
+                        <div id="tooltipPreview" class="tooltip">
                             <div class="tooltip__icon">
                                 <svg>
                                     <use xlink:href="/assets/images/icons.svg#help">
@@ -202,7 +211,24 @@
 
                 <div class="component-preview component-list__item">
                     <div class="component-preview__preview">
-
+                        <div id="modalDialogPreview">
+                            <div class="modal-window">
+                                <div class="modal-window__backdrop"></div>
+                                <div class="modal-window__window">
+                                    <div class="modal-window__content">
+                                        <h1 class="modal-window__content-title">
+                                            Some important message
+                                        </h1>
+                                        <p class="modal-window__content-description">
+                                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                        </p>
+                                    </div>
+                                    <svg id="modal-close" class="modal-window__close-icon">
+                                        <use xlink:href="../../assets/images/icons.svg#close">
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                     <div class="component-preview__title">
                         Modal Dialog
@@ -229,12 +255,13 @@
                 About
             </h2>
             <p class="footer__details">
-                This project is a collection of professionally designed, pre-built, fully responsive HTML snippets
-                you
-                can
-                drop into your projects. Get started by checking out our free preview components, or browsing the
-                PNG
-                previews in the categories you're most curious about.
+                Kira's attempts in page layout in terms of courses on <a href="https://learn.javascript.ru">learn.javascript.ru</a>.
+            </p>
+            <p>
+                Kirill "Kira" Lappo
+            </p>
+            <p>
+                <a href="https://github.com/Kira-Lappo">GitHub</a>
             </p>
         </div>
     </footer>
