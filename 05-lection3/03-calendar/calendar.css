@@ -1,4 +1,10 @@
 .calendar {
+    background-color: var(--background);
+
+    border: var(--component-border);
+    box-sizing: border-box;
+    border-radius: var(--component-border-radius);
+
     padding: 28px;
 }
 
@@ -55,12 +61,25 @@
     grid-area: empty-start / 1 / empty-end / -1;
 }
 
-.calendar__grid-item_selected{
+.calendar__grid-item_selected {
     background-color:  var(--calendar-background-days-selected);
 }
 
+.calendar__grid-item_selected:last-of-type {
+    border-right: 10px dotted red;
+}
+
 .calendar__grid-item_selected_start
-, .calendar__grid-item_selected_end {
+{
     background-color:  var(--primary);
     color: var(--primary-foreground);
+    border-top-left-radius: var(--calendar-days-border-radius);
+    border-bottom-left-radius: var(--calendar-days-border-radius);
+}
+
+.calendar__grid-item_selected_end {
+    background-color:  var(--primary);
+    color: var(--primary-foreground);
+    border-top-right-radius: var(--calendar-days-border-radius);
+    border-bottom-right-radius: var(--calendar-days-border-radius);
 }

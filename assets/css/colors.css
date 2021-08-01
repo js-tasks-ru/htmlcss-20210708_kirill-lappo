@@ -58,6 +58,7 @@
     --calendar-foreground: var(--dark-blue);
     --calendar-foreground-days: var(--grey-3_5);
     --calendar-background-days-selected: rgba(var(--blue-lighter), 0.5);
+    --calendar-days-border-radius: 2px;
 
     --component-border:  1px solid var(--grey-3);
     --component-border-radius: 8px;
