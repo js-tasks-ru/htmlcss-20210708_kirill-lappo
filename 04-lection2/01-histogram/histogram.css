@@ -1,4 +1,7 @@
 .histrogram {
+    border: var(--component-border);
+    box-sizing: border-box;
+    border-radius: var(--component-border-radius);
     padding: 16px 24px 24px;
 }
 
