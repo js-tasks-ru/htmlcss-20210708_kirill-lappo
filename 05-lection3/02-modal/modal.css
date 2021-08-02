@@ -10,7 +10,7 @@
 }
 
 /* for preview purposes on component pages*/
-.modal-window-absolute {
+.modal-window_preview {
     position: absolute;
 }
 
