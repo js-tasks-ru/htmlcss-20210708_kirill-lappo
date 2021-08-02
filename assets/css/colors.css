@@ -3,7 +3,7 @@
     --grey-0_5: #F9FAFC;
     --grey-1: #F8F9FA;
     --grey-2: #DDE2E5;
-    --grey-2_5: #C4C4C4;
+    --grey-2_5: 196, 196, 196; /* #C4C4C4*/
     --grey-3: #ACB5BD;
     --grey-4: #495057;
     --black: 33, 36, 41;/*#212429*/
@@ -51,7 +51,7 @@
 
     --modal-title-foreground: var(--dark-blue);
     --modal-description-foreground: var(--grey-4);
-    --modal-backdrop-background: var(--grey-2_5);
+    --modal-backdrop-background: rgba(var(--grey-2_5), 0.5);
 
     --component-border:  1px solid var(--grey-3);
     --component-border-radius: 8px;
