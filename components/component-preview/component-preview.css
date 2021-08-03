@@ -7,12 +7,10 @@
     box-sizing: border-box;
     border-radius: var(--component-border-radius);
     box-shadow: var(--component-box-shadow);
-
-    height: 360px;
 }
 
 .component-preview__preview {
-    margin: 80px 20px 25px;
+    padding: 50px 20px 25px;
     flex-grow: 1;
 }
 

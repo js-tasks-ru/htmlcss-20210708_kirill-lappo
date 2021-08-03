@@ -5,6 +5,7 @@
     --grey-2: #DDE2E5;
     --grey-2_5: 196, 196, 196; /* #C4C4C4*/
     --grey-3: #ACB5BD;
+    --grey-3_5: #90A0B7;
     --grey-4: #495057;
     --black: 33, 36, 41;/*#212429*/
 
@@ -16,6 +17,7 @@
 
     --purple: #7048E8;
     --purple-darker: #5028C6;
+    --blue-lighter: 160, 177, 245;/* #A0B1F5 */
     --blue: #4263EB;
     --blue-darker: #2342C0;
 
@@ -52,6 +54,11 @@
     --modal-title-foreground: var(--dark-blue);
     --modal-description-foreground: var(--grey-4);
     --modal-backdrop-background: rgba(var(--grey-2_5), 0.5);
+
+    --calendar-foreground: var(--dark-blue);
+    --calendar-foreground-days: var(--grey-3_5);
+    --calendar-background-days-selected: rgba(var(--blue-lighter), 0.5);
+    --calendar-days-border-radius: 2px;
 
     --component-border:  1px solid var(--grey-3);
     --component-border-radius: 8px;

@@ -4,17 +4,18 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./04-lection2/01-histogram/histogram.css">
     <link rel="stylesheet" href="./05-lection3/01-tooltip/tooltip.css">
     <link rel="stylesheet" href="./05-lection3/02-modal/modal.css">
+    <link rel="stylesheet" href="./05-lection3/03-calendar/calendar.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
     <link rel="stylesheet" href="./components/component-list/component-list.css">
     <link rel="stylesheet" href="./components/component-preview/component-preview.css">
     <link rel="stylesheet" href="./components/footer/footer.css">
-    <link rel="stylesheet" href="./components/page-area/page-area.css">
     <link rel="stylesheet" href="./components/header/header.css">
     <link rel="stylesheet" href="./components/link/link.css">
     <link rel="stylesheet" href="./components/main/main.css">
+    <link rel="stylesheet" href="./components/page-area/page-area.css">
     <style>
         /* To make tooltip info always visible despite hove state */
         .tooltip__info {
@@ -50,7 +51,7 @@
                         <div id="tooltipPreview" class="tooltip">
                             <div class="tooltip__icon">
                                 <svg>
-                                    <use xlink:href="/assets/images/icons.svg#help">
+                                    <use xlink:href="./assets/images/icons.svg#help">
                                 </svg>
                                 <div class="tooltip__info">
                                     Helper Text Goes Here
@@ -137,7 +138,66 @@
 
                 <div class="component-preview component-list__item">
                     <div class="component-preview__preview">
+                            <div class="calendar">
+                                <div class="calendar__title">
+                                    October 2019
+                                </div>
+                                <div class="calendar__grid-wrapper">
+                                    <div class="calendar__grid">
+                                        <div class="calendar__grid-item calendar__grid-item_day-name">Sun</div>
+                                        <div class="calendar__grid-item calendar__grid-item_day-name">Mon</div>
+                                        <div class="calendar__grid-item calendar__grid-item_day-name">Tue</div>
+                                        <div class="calendar__grid-item calendar__grid-item_day-name">Wed</div>
+                                        <div class="calendar__grid-item calendar__grid-item_day-name">Thu</div>
+                                        <div class="calendar__grid-item calendar__grid-item_day-name">Fri</div>
+                                        <div class="calendar__grid-item calendar__grid-item_day-name">Sat</div>
 
+                                        <div class="calendar__grid-row-separator"></div>
+
+                                        <div class="calendar__grid-item"></div>
+                                        <div class="calendar__grid-item"></div>
+                                        <div class="calendar__grid-item"></div>
+                                        <div class="calendar__grid-item"></div>
+                                        <div class="calendar__grid-item"></div>
+                                        <div class="calendar__grid-item">1</div>
+                                        <div class="calendar__grid-item">2</div>
+
+                                        <div class="calendar__grid-item">3</div>
+                                        <div class="calendar__grid-item">4</div>
+                                        <div class="calendar__grid-item">5</div>
+                                        <div class="calendar__grid-item">6</div>
+                                        <div class="calendar__grid-item calendar__grid-item_selected_start">7</div>
+                                        <div class="calendar__grid-item calendar__grid-item_selected">8</div>
+                                        <div class="calendar__grid-item calendar__grid-item_selected">9</div>
+
+                                        <div class="calendar__grid-item calendar__grid-item_selected">10</div>
+                                        <div class="calendar__grid-item calendar__grid-item_selected">11</div>
+                                        <div class="calendar__grid-item calendar__grid-item_selected_end">12</div>
+                                        <div class="calendar__grid-item">13</div>
+                                        <div class="calendar__grid-item">14</div>
+                                        <div class="calendar__grid-item">15</div>
+                                        <div class="calendar__grid-item">16</div>
+
+                                        <div class="calendar__grid-item">17</div>
+                                        <div class="calendar__grid-item">18</div>
+                                        <div class="calendar__grid-item">19</div>
+                                        <div class="calendar__grid-item">20</div>
+                                        <div class="calendar__grid-item">21</div>
+                                        <div class="calendar__grid-item">22</div>
+                                        <div class="calendar__grid-item">23</div>
+
+                                        <div class="calendar__grid-item">24</div>
+                                        <div class="calendar__grid-item">25</div>
+                                        <div class="calendar__grid-item">26</div>
+                                        <div class="calendar__grid-item">27</div>
+                                        <div class="calendar__grid-item">28</div>
+                                        <div class="calendar__grid-item">29</div>
+                                        <div class="calendar__grid-item">30</div>
+
+                                        <div class="calendar__grid-item">31</div>
+                                    </div>
+                                </div>
+                            </div>
                     </div>
                     <div class="component-preview__title">
                         Calendar
