@@ -10,6 +10,9 @@
 }
 
 .component-preview__preview {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding: 50px 20px 25px;
     flex-grow: 1;
 }
