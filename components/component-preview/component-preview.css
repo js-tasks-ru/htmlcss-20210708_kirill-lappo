@@ -2,7 +2,6 @@
     display: flex;
     flex-flow: column nowrap;
 
-    text-align: center;
     background: var(--background);
     box-sizing: border-box;
     border-radius: var(--component-border-radius);
@@ -10,11 +9,15 @@
 }
 
 .component-preview__preview {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     padding: 50px 20px 25px;
     flex-grow: 1;
+}
+
+.component-preview__preview > * {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 .component-preview__title {
@@ -22,4 +25,5 @@
     font-size: 21px;
     line-height: 25px;
     margin-bottom: 30px;
+    text-align: center;
 }
