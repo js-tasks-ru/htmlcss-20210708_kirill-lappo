@@ -1,22 +1,17 @@
 .modal-window {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
     right: 0;
 
     text-align: left;
+    background-color: var(--modal-backdrop-background);
 }
 
-.modal-window__backdrop {
-    background-color: var(--modal-backdrop-background);
-    opacity: 0.5;
-
+/* for preview purposes on component pages*/
+.modal-window_preview {
     position: absolute;
-    top: 0;
-    right: 0;
-    bottom:0;
-    left: 0;
 }
 
 .modal-window__window {
@@ -28,15 +23,13 @@
     margin: 0 auto;
     max-width: 1200px;
 
+    padding: 30px 40px;
+
     background-color: var(--background);
 
     border: var(--component-border);
     box-sizing: border-box;
     border-radius: var(--component-border-radius);
-}
-
-.modal-window__content {
-    padding: 30px 40px;
 }
 
 .modal-window__content-title {
