@@ -7,8 +7,6 @@
     box-sizing: border-box;
     border-radius: var(--component-border-radius);
     box-shadow: var(--component-box-shadow);
-
-    height: 360px;
 }
 
 .component-preview__preview {
